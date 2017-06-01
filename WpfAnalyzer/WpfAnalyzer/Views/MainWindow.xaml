@@ -18,7 +18,7 @@
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
+            <ColumnDefinition Width="120"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -27,10 +27,14 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0"
                    Grid.Column="0"
+                   Margin="10"
                    Text="Browse to folder" />
         <Button Grid.Row="0"
                 Grid.Column="1"
                 Content="..."
+                Width="25"
+                Margin="10"
+                HorizontalAlignment="Left"
                 Command="{Binding Path=BrowseCommand, Mode=OneTime}" />
         <views:DirectoryView Grid.Row="1"
                  Grid.Column="0"

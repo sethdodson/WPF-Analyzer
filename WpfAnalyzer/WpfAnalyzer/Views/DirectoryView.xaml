@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:WpfAnalyzer.Views"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Border Margin="10" Background="AntiqueWhite" BorderBrush="Black" BorderThickness="1">
+    <Border Margin="10" Background="AliceBlue" BorderBrush="Black" BorderThickness="1">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
