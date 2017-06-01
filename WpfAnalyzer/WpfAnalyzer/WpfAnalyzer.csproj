@@ -38,6 +38,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.IO.Abstractions, Version=2.0.0.144, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Abstractions.2.0.0.144\lib\net40\System.IO.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +50,24 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Thinktecture.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.Abstractions.1.3.2\lib\net45\Thinktecture.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.IO.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.IO.Abstractions.1.3.2\lib\net45\Thinktecture.IO.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.IO.FileSystem.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.IO.FileSystem.Abstractions.1.3.2\lib\net45\Thinktecture.IO.FileSystem.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.Runtime.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.Runtime.Abstractions.1.3.2\lib\net45\Thinktecture.Runtime.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.Runtime.Handles.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.Runtime.Handles.Abstractions.1.3.2\lib\net45\Thinktecture.Runtime.Handles.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.Text.Encoding.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.Text.Encoding.Abstractions.1.3.2\lib\net45\Thinktecture.Text.Encoding.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -78,8 +99,10 @@
     <Compile Include="Common\EventArgsOfT.cs" />
     <Compile Include="Services\AnalyzerService.cs" />
     <Compile Include="Services\DialogService.cs" />
+    <Compile Include="Services\DirectoryInfoAdapterService.cs" />
     <Compile Include="Services\IAnalyzerService.cs" />
     <Compile Include="Services\IDialogService.cs" />
+    <Compile Include="Services\IDirectoryInfoAdapterService.cs" />
     <Compile Include="ViewModels\DirectoryViewModel.cs" />
     <Compile Include="ViewModels\FileViewModel.cs" />
     <Compile Include="ViewModels\IFileSystemViewModel.cs" />

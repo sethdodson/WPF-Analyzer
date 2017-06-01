@@ -19,3 +19,16 @@ D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\obj\Debug\Views\Fi
 D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Autofac.dll
 D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Autofac.xml
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\System.IO.Abstractions.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.Abstractions.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.IO.Abstractions.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.IO.FileSystem.Abstractions.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.Runtime.Abstractions.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.Runtime.Handles.Abstractions.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.Text.Encoding.Abstractions.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.Abstractions.xml
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.IO.Abstractions.xml
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.IO.FileSystem.Abstractions.xml
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.Runtime.Abstractions.xml
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.Runtime.Handles.Abstractions.xml
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Thinktecture.Text.Encoding.Abstractions.xml

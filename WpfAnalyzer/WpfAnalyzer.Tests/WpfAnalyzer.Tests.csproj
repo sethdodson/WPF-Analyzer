@@ -38,21 +38,52 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.0.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.1.11\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.1.11\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Moq, Version=4.7.12.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.7.12\lib\net45\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="Thinktecture.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.Abstractions.1.3.2\lib\net45\Thinktecture.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.IO.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.IO.Abstractions.1.3.2\lib\net45\Thinktecture.IO.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.IO.FileSystem.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.IO.FileSystem.Abstractions.1.3.2\lib\net45\Thinktecture.IO.FileSystem.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.Runtime.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.Runtime.Abstractions.1.3.2\lib\net45\Thinktecture.Runtime.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.Runtime.Handles.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.Runtime.Handles.Abstractions.1.3.2\lib\net45\Thinktecture.Runtime.Handles.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.Text.Encoding.Abstractions, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.Text.Encoding.Abstractions.1.3.2\lib\net45\Thinktecture.Text.Encoding.Abstractions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnalyzerServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModelTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WpfAnalyzer\WpfAnalyzer.csproj">
+      <Project>{2EA7D51F-BBFB-4295-9350-C27D6358E9D1}</Project>
+      <Name>WpfAnalyzer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

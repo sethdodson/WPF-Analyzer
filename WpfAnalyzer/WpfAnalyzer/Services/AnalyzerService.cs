@@ -1,21 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Thinktecture.IO;
 using WpfAnalyzer.ViewModels;
 
 namespace WpfAnalyzer.Services
 {
     public class AnalyzerService : IAnalyzerService
     {
-        public IFileSystemViewModel Analyze(string path)
+        private readonly IFile _file;
+        private readonly IDirectoryInfoAdapterService _directoryInfoAdapterService;        
+
+        public AnalyzerService(IFile file, IDirectoryInfoAdapterService directoryInfoAdapterService)
         {
-            return CreateFileSystemViewModel(new DirectoryInfo(path));
+            _file = file;
+            _directoryInfoAdapterService = directoryInfoAdapterService;
         }
 
-        private IFileSystemViewModel CreateFileSystemViewModel(DirectoryInfo directoryInfo)
+        public IFileSystemViewModel Analyze(string path)
+        {
+            return CreateFileSystemViewModel(_directoryInfoAdapterService.CreateDirectoryInfo(path));
+        }
+
+        private IFileSystemViewModel CreateFileSystemViewModel(IDirectoryInfo directoryInfo)
         {
             var directoryViewModel = new DirectoryViewModel(directoryInfo);
             AddChildDirectories(directoryInfo, directoryViewModel);
@@ -26,13 +35,13 @@ namespace WpfAnalyzer.Services
             return directoryViewModel;
         }
 
-        private void AddChildDirectories(DirectoryInfo directoryInfo, DirectoryViewModel directoryViewModel)
+        private void AddChildDirectories(IDirectoryInfo directoryInfo, DirectoryViewModel directoryViewModel)
         {
             foreach (var directory in directoryInfo.GetDirectories())
                 directoryViewModel.Children.Add(CreateFileSystemViewModel(directory));
         }
 
-        private void AddChildFiles(DirectoryInfo directoryInfo, DirectoryViewModel directoryViewModel)
+        private void AddChildFiles(IDirectoryInfo directoryInfo, DirectoryViewModel directoryViewModel)
         {
             foreach (var fileInfo in directoryInfo.GetFiles())
             {
@@ -70,14 +79,14 @@ namespace WpfAnalyzer.Services
             return fileCount + numberOfFilesProcessedFromDirectories;
         }
 
-        private int GetLineCountForFile(FileInfo fileInfo)
+        private int GetLineCountForFile(IFileInfo fileInfo)
         {
-            return File
+            return _file
                 .ReadLines(fileInfo.FullName)
                 .Count();
         }
 
-        private static bool IsCodeFile(FileInfo fileInfo)
+        private static bool IsCodeFile(IFileInfo fileInfo)
         {
             switch (fileInfo.Extension)
             {

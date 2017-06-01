@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using Thinktecture.IO;
+using Thinktecture.IO.Adapters;
 using WpfAnalyzer.Commands;
 using WpfAnalyzer.Services;
 using WpfAnalyzer.ViewModels;
@@ -32,6 +34,8 @@ namespace WpfAnalyzer
             builder.RegisterType<AnalyzerService>().As<IAnalyzerService>();
             builder.RegisterType<DialogService>().As<IDialogService>();
             builder.RegisterType<BrowseCommand>().As<IBrowseCommand>();
+            builder.RegisterType<DirectoryInfoAdapterService>().As<IDirectoryInfoAdapterService>();
+            builder.RegisterType<FileAdapter>().As<IFile>();
             var container = builder.Build();
             return container;
         }

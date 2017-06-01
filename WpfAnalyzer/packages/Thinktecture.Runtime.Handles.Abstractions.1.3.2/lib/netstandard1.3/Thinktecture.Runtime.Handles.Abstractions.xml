@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Thinktecture.Runtime.Handles.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Thinktecture.CriticalHandleExtensions">
+            <summary>
+            Extensions for <see cref="T:System.Runtime.InteropServices.CriticalHandle"/>.
+            </summary>
+        </member>
+        <member name="M:Thinktecture.CriticalHandleExtensions.ToInterface(System.Runtime.InteropServices.CriticalHandle)">
+            <summary>
+            Converts <see cref="T:System.Runtime.InteropServices.CriticalHandle"/> to <see cref="T:Thinktecture.Runtime.InteropServices.ICriticalHandle"/>.
+            </summary>
+            <param name="handle"><see cref="T:System.Runtime.InteropServices.CriticalHandle"/> to convert.</param>
+            <returns>Instance of <see cref="T:Thinktecture.Runtime.InteropServices.ICriticalHandle"/>.</returns>
+        </member>
+        <member name="T:Thinktecture.SafeHandleExtensions">
+            <summary>
+            Extensions for <see cref="T:System.Runtime.InteropServices.SafeHandle"/>.
+            </summary>
+        </member>
+        <member name="M:Thinktecture.SafeHandleExtensions.ToInterface(System.Runtime.InteropServices.SafeHandle)">
+            <summary>
+            Converts safe handle to <see cref="T:Thinktecture.Runtime.InteropServices.ISafeHandle"/>.
+            </summary>
+            <param name="handle"><see cref="T:System.Runtime.InteropServices.SafeHandle"/> to convert</param>
+            <returns>Instance of <see cref="T:Thinktecture.Runtime.InteropServices.ISafeHandle"/>.</returns>
+        </member>
+        <member name="T:Thinktecture.SafeWaitHandlerExtensions">
+            <summary>
+            Extensions for <see cref="T:Microsoft.Win32.SafeHandles.SafeWaitHandle"/>.
+            </summary>
+        </member>
+        <member name="M:Thinktecture.SafeWaitHandlerExtensions.ToInterface(Microsoft.Win32.SafeHandles.SafeWaitHandle)">
+            <summary>
+            Converts <see cref="T:Microsoft.Win32.SafeHandles.SafeWaitHandle"/> to <see cref="T:Thinktecture.Win32.SafeHandles.ISafeWaitHandle"/>.
+            </summary>
+            <param name="handle"><see cref="T:Microsoft.Win32.SafeHandles.SafeWaitHandle"/> to convert.</param>
+            <returns>Instance of <see cref="T:Thinktecture.Win32.SafeHandles.ISafeWaitHandle"/>.</returns>
+        </member>
+        <member name="M:Thinktecture.SafeWaitHandlerExtensions.ToImplementation(Thinktecture.Win32.SafeHandles.ISafeWaitHandle)">
+            <summary>
+            Converts provided <see cref="T:Thinktecture.Win32.SafeHandles.ISafeWaitHandle"/> info to <see cref="T:Microsoft.Win32.SafeHandles.SafeWaitHandle"/>.
+            </summary>
+            <param name="abstraction">Instance of <see cref="T:Thinktecture.Win32.SafeHandles.ISafeWaitHandle"/> to convert.</param>
+            <returns>An instance of <see cref="T:Microsoft.Win32.SafeHandles.SafeWaitHandle"/>.</returns>
+        </member>
+        <member name="T:Thinktecture.Runtime.InteropServices.Adapters.CriticalHandleAdapter">
+            <summary>
+            Adapter for <see cref="T:System.Runtime.InteropServices.CriticalHandle"/>.
+            </summary>
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.CriticalHandleAdapter.UnsafeConvert">
+            <inheritdoc />
+        </member>
+        <member name="P:Thinktecture.Runtime.InteropServices.Adapters.CriticalHandleAdapter.IsClosed">
+            <inheritdoc />
+        </member>
+        <member name="P:Thinktecture.Runtime.InteropServices.Adapters.CriticalHandleAdapter.IsInvalid">
+            <inheritdoc />
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.CriticalHandleAdapter.#ctor(System.Runtime.InteropServices.CriticalHandle)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thinktecture.Runtime.InteropServices.Adapters.CriticalHandleAdapter"/> class.
+            </summary>
+            <param name="handle">Handle to be used by the adapter.</param>
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.CriticalHandleAdapter.SetHandleAsInvalid">
+            <inheritdoc />
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.CriticalHandleAdapter.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Thinktecture.Runtime.InteropServices.Adapters.SafeHandleAdapter">
+            <summary>
+            Adapter for <see cref="T:System.Runtime.InteropServices.SafeHandle"/>.
+            </summary>
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.SafeHandleAdapter.UnsafeConvert">
+            <inheritdoc />
+        </member>
+        <member name="P:Thinktecture.Runtime.InteropServices.Adapters.SafeHandleAdapter.IsClosed">
+            <inheritdoc />
+        </member>
+        <member name="P:Thinktecture.Runtime.InteropServices.Adapters.SafeHandleAdapter.IsInvalid">
+            <inheritdoc />
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.SafeHandleAdapter.#ctor(System.Runtime.InteropServices.SafeHandle)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thinktecture.Runtime.InteropServices.Adapters.CriticalHandleAdapter"/> class.
+            </summary>
+            <param name="handle">Handle to be use by the adapter.</param>
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.SafeHandleAdapter.DangerousAddRef(System.Boolean@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.SafeHandleAdapter.DangerousGetHandle">
+            <inheritdoc />
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.SafeHandleAdapter.DangerousRelease">
+            <inheritdoc />
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.SafeHandleAdapter.SetHandleAsInvalid">
+            <inheritdoc />
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.Adapters.SafeHandleAdapter.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Thinktecture.Runtime.InteropServices.ICriticalHandle">
+            <summary>
+            Represents a wrapper class for handle resources.
+            </summary>
+        </member>
+        <member name="P:Thinktecture.Runtime.InteropServices.ICriticalHandle.IsClosed">
+            <summary>Gets a value indicating whether the handle is closed.</summary>
+            <returns>true if the handle is closed; otherwise, false.</returns>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+            </PermissionSet>
+        </member>
+        <member name="P:Thinktecture.Runtime.InteropServices.ICriticalHandle.IsInvalid">
+            <summary>When overridden in a derived class, gets a value indicating whether the handle value is invalid.</summary>
+            <returns>true if the handle is valid; otherwise, false.</returns>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+            </PermissionSet>
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.ICriticalHandle.SetHandleAsInvalid">
+            <summary>Marks a handle as invalid.</summary>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+            </PermissionSet>
+        </member>
+        <member name="T:Thinktecture.Runtime.InteropServices.ISafeHandle">
+            <summary>
+            Represents a wrapper class for operating system handles. This class must be inherited.
+            </summary>
+        </member>
+        <member name="P:Thinktecture.Runtime.InteropServices.ISafeHandle.IsClosed">
+            <summary>Gets a value indicating whether the handle is closed.</summary>
+            <returns>true if the handle is closed; otherwise, false.</returns>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+            </PermissionSet>
+        </member>
+        <member name="P:Thinktecture.Runtime.InteropServices.ISafeHandle.IsInvalid">
+            <summary>When overridden in a derived class, gets a value indicating whether the handle value is invalid.</summary>
+            <returns>true if the handle value is invalid; otherwise, false.</returns>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+            </PermissionSet>
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.ISafeHandle.DangerousAddRef(System.Boolean@)">
+            <summary>Manually increments the reference counter on <see cref="T:System.Runtime.InteropServices.SafeHandle" /> instances.</summary>
+            <param name="success">true if the reference counter was successfully incremented; otherwise, false.</param>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+            </PermissionSet>
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.ISafeHandle.DangerousGetHandle">
+            <summary>Returns the value of the <see cref="F:System.Runtime.InteropServices.SafeHandle.handle" /> field.</summary>
+            <returns>An IntPtr representing the value of the <see cref="F:System.Runtime.InteropServices.SafeHandle.handle" /> field. If the handle has been marked invalid with <see cref="M:System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid" />, this method still returns the original handle value, which can be a stale value.</returns>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+            </PermissionSet>
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.ISafeHandle.DangerousRelease">
+            <summary>Manually decrements the reference counter on a <see cref="T:System.Runtime.InteropServices.SafeHandle" /> instance.</summary>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+            </PermissionSet>
+        </member>
+        <member name="M:Thinktecture.Runtime.InteropServices.ISafeHandle.SetHandleAsInvalid">
+            <summary>Marks a handle as no longer used.</summary>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+            </PermissionSet>
+        </member>
+        <member name="T:Thinktecture.Win32.SafeHandles.Adapters.SafeWaitHandleAdapter">
+            <summary>
+            Adapter for <see cref="T:Microsoft.Win32.SafeHandles.SafeWaitHandle"/>.
+            </summary>
+        </member>
+        <member name="M:Thinktecture.Win32.SafeHandles.Adapters.SafeWaitHandleAdapter.UnsafeConvert">
+            <inheritdoc />
+        </member>
+        <member name="M:Thinktecture.Win32.SafeHandles.Adapters.SafeWaitHandleAdapter.#ctor(System.IntPtr,System.Boolean)">
+            <summary>Initializes a new instance of the <see cref="T:Thinktecture.Win32.SafeHandles.Adapters.SafeWaitHandleAdapter" /> class. </summary>
+            <param name="existingHandle">An <see cref="T:System.IntPtr" /> object that represents the pre-existing handle to use.</param>
+            <param name="ownsHandle">true to reliably release the handle during the finalization phase; false to prevent reliable release (not recommended).</param>
+        </member>
+        <member name="M:Thinktecture.Win32.SafeHandles.Adapters.SafeWaitHandleAdapter.#ctor(Microsoft.Win32.SafeHandles.SafeWaitHandle)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thinktecture.Win32.SafeHandles.Adapters.SafeWaitHandleAdapter" /> class.
+            </summary>
+            <param name="handle">Handle to be used by the adapter.</param>
+        </member>
+        <member name="T:Thinktecture.Win32.SafeHandles.ISafeWaitHandle">
+            <summary>
+            Represents a wrapper class for a wait handle.
+            </summary>
+        </member>
+    </members>
+</doc>

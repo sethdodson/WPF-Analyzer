@@ -11,5 +11,6 @@ namespace WpfAnalyzer.ViewModels
         List<IFileSystemViewModel> Children { get; }        
         bool IsCodeFile { get; }
         int LineCount { get; set; }
+        string Name { get; }
     }
 }
