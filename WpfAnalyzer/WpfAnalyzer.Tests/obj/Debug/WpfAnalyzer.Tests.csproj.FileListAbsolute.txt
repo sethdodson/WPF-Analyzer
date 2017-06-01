@@ -1,0 +1,12 @@
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\bin\Debug\WpfAnalyzer.Tests.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\bin\Debug\WpfAnalyzer.Tests.pdb
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\obj\Debug\WpfAnalyzer.Tests.csprojResolveAssemblyReference.cache
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\obj\Debug\WpfAnalyzer.Tests.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer.Tests\obj\Debug\WpfAnalyzer.Tests.pdb

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfAnalyzer
+namespace WpfAnalyzer.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for FileView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class FileView : UserControl
     {
-        public MainWindow()
+        public FileView()
         {
             InitializeComponent();
         }
