@@ -9,6 +9,7 @@ namespace WpfAnalyzer.Services
 {
     public class DialogService : IDialogService
     {
+        //This would be testable with a Shim if I were using Microsoft Fakes, rather than Moq
         public string BrowseToFolder()
         {
             using (var dialog = new FolderBrowserDialog())

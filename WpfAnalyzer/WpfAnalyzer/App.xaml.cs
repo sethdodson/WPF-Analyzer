@@ -28,6 +28,7 @@ namespace WpfAnalyzer
 
         private IContainer InitializeContainer()
         {
+            //Here's my composition root!
             var builder = new ContainerBuilder();
             builder.RegisterType<MainWindow>().As<IMainWindow>();
             builder.RegisterType<MainWindowViewModel>().As<IMainWindowViewModel>();
