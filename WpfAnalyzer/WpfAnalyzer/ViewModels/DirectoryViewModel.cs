@@ -9,19 +9,18 @@ namespace WpfAnalyzer.ViewModels
 {
     public class DirectoryViewModel : IFileSystemViewModel
     {
-        private DirectoryInfo directoryInfo;
-
-        public DirectoryViewModel(DirectoryInfo directoryInfo)
-        {
-            this.directoryInfo = directoryInfo;
-        }
+        private DirectoryInfo _directoryInfo;
 
         public List<IFileSystemViewModel> Children { get; } = new List<IFileSystemViewModel>();
-
         public int LineCount { get; set; }
         public int NumberOfFilesWithCode { get; set; }
         public bool IsCodeFile => false;
-        public string Name => directoryInfo.Name;
+        public string Name => _directoryInfo.Name;
         public int NumberOfFilesProcessed { get; set; }
+
+        public DirectoryViewModel(DirectoryInfo directoryInfo)
+        {
+            _directoryInfo = directoryInfo;
+        }
     }
 }

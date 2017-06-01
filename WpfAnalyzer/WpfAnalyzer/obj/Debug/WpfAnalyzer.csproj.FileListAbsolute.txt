@@ -17,3 +17,5 @@ D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\obj\Debug\Views\Fi
 D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\obj\Debug\Views\DirectoryView.baml
 D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\obj\Debug\Views\FileView.baml
 D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Autofac.dll
+D:\Projects\WPF Analyzer\WPF-Analyzer\WpfAnalyzer\WpfAnalyzer\bin\Debug\Autofac.xml

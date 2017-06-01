@@ -11,7 +11,7 @@ using WpfAnalyzer.Services;
 
 namespace WpfAnalyzer.ViewModels
 {
-    public class MainWindowViewModel : INotifyPropertyChanged
+    public class MainWindowViewModel : INotifyPropertyChanged, IMainWindowViewModel
     {
         private readonly IAnalyzerService _analyzerService;
         private IFileSystemViewModel _topDirectory;

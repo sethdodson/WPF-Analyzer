@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.6.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.6.0\lib\net45\Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
@@ -80,6 +83,7 @@
     <Compile Include="ViewModels\DirectoryViewModel.cs" />
     <Compile Include="ViewModels\FileViewModel.cs" />
     <Compile Include="ViewModels\IFileSystemViewModel.cs" />
+    <Compile Include="ViewModels\IMainWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\DirectoryView.xaml.cs">
       <DependentUpon>DirectoryView.xaml</DependentUpon>
@@ -87,6 +91,7 @@
     <Compile Include="Views\FileView.xaml.cs">
       <DependentUpon>FileView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\IMainWindow.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -110,6 +115,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -9,17 +9,18 @@ namespace WpfAnalyzer.ViewModels
 {
     public class FileViewModel : IFileSystemViewModel
     {
-        private FileInfo fileInfo;
+        private FileInfo _fileInfo;
+
+        public List<IFileSystemViewModel> Children { get; } = new List<IFileSystemViewModel>();
+        public bool IsCodeFile { get; set; }
+        public int LineCount { get; set; }
+        public string Name => _fileInfo.Name;
 
         public FileViewModel(FileInfo fileInfo)
         {
-            this.fileInfo = fileInfo;
+            _fileInfo = fileInfo;
         }
 
-        public List<IFileSystemViewModel> Children { get; } = new List<IFileSystemViewModel>();
 
-        public bool IsCodeFile { get; set; }
-        public int LineCount { get; set; }
-        public string Name => fileInfo.Name;
     }
 }
